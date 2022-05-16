@@ -1,24 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen">
+      <form
+        action=""
+        className="mt-20 flex flex-col justify-center items-center text-3xl gap-4">
+        <div className="flex justify-around w-[500px]">
+          {" "}
+          <label>Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            className="border border-black"
+          />
+        </div>
+        <div className="flex justify-around items-center w-[500px]">
+          {" "}
+          <label>Email:</label>
+          <input
+            className="border border-black"
+            type="email"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div className="flex justify-around items-center w-[500px]">
+          {" "}
+          <label>Password:</label>
+          <input
+            className="border border-black"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+      </form>
     </div>
   );
 }
