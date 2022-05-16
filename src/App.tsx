@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [name, setName] = useState("");
   return (
     <div className="w-screen">
       <form
@@ -13,6 +15,8 @@ function App() {
             type="text"
             name="name"
             id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="border border-black"
           />
         </div>

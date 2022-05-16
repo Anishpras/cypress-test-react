@@ -12,4 +12,6 @@ it("Interacts with field", () => {
     .get('input[name="password"]')
     .type("Amity@123")
     .should("be.visible");
+
+  cy.screenshot();
 });
